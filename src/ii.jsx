@@ -135,6 +135,16 @@ export default function Ii() {
               className="nav-apply"
               onClick={closeMenu}
             >
+             <a
+  href="#"
+  className="nav-admin"
+  onClick={(e)=>{
+    e.preventDefault();
+    window.dispatchEvent(new CustomEvent("openAdmin"));
+  }}
+>
+  🔐 Admin Login
+</a>
               Apply Now
             </a>
           </nav>

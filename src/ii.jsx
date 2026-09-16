@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./app.css";
+import "./App.css";
 
-export default function Ii() {
+export default function Ii({ openAdmin }) {
   const [courses, setCourses] = useState([]);
   const [gallery, setGallery] = useState([]);
   const [notices, setNotices] = useState([]);
@@ -121,33 +121,29 @@ export default function Ii() {
             ☰
           </button>
 
-          <nav className={menuOpen ? "nav open" : "nav"}>
-            <a href="#home" onClick={closeMenu}>Home</a>
-            <a href="#about" onClick={closeMenu}>About</a>
-            <a href="#courses" onClick={closeMenu}>Courses</a>
-            <a href="#notices" onClick={closeMenu}>Notices</a>
-            <a href="#gallery" onClick={closeMenu}>Gallery</a>
-            <a href="#events" onClick={closeMenu}>Events</a>
-            <a href="#contact" onClick={closeMenu}>Contact</a>
+         <nav className={menuOpen ? "nav open" : "nav"}>
+  <a href="#home" onClick={closeMenu}>Home</a>
+  <a href="#about" onClick={closeMenu}>About</a>
+  <a href="#courses" onClick={closeMenu}>Courses</a>
+  <a href="#notices" onClick={closeMenu}>Notices</a>
+  <a href="#gallery" onClick={closeMenu}>Gallery</a>
+  <a href="#events" onClick={closeMenu}>Events</a>
+  <a href="#contact" onClick={closeMenu}>Contact</a>
 
-            <a
-              href="#admission"
-              className="nav-apply"
-              onClick={closeMenu}
-            >
-             <a
-  href="#"
+  <button
   className="nav-admin"
-  onClick={(e)=>{
-    e.preventDefault();
-    window.dispatchEvent(new CustomEvent("openAdmin"));
-  }}
+  onClick={openAdmin}
 >
   🔐 Admin Login
-</a>
-              Apply Now
-            </a>
-          </nav>
+</button>
+  <a
+    href="#admission"
+    className="nav-apply"
+    onClick={closeMenu}
+  >
+    Apply Now
+  </a>
+</nav>
 
         </div>
       </header>

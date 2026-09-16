@@ -1072,12 +1072,7 @@ footer a {
     height: 180px !important;
   }
 }
-.public-admin-bar{
-  position: fixed;
-  top: 20px;
-  right: 180px; /* Apply Now ke left me rahega */
-  z-index: 100;
-}
+
 
 .public-admin-bar button{
   border:none;
@@ -1162,4 +1157,53 @@ footer a {
 .gallery-item img{
   height:180px !important;
   object-fit:cover;
+}
+.nav-admin{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:12px 18px;
+  border:1px solid #d0d5dd;
+  border-radius:10px;
+
+  background:#fff;
+  color:#0f172a;
+
+  font-weight:600;
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.nav-admin:hover{
+  background:#0b63ce;
+  color:#fff;
+  border-color:#0b63ce;
+  transform:translateY(-2px);
+}
+.nav{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.nav-admin{
+  border:1px solid #0b63ce;
+  background:#fff;
+  color:#0b63ce;
+  padding:12px 18px;
+  border-radius:10px;
+  font-weight:700;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.nav-admin:hover{
+  background:#0b63ce;
+  color:#fff;
+}
+
+.nav-apply{
+  padding:12px 20px;
 }

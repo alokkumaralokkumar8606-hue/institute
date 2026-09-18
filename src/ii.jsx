@@ -201,13 +201,7 @@ export default function Ii({ openAdmin }) {
 
     </div>
 
-    <div className="hero-image">
-      <img
-        src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80"
-        alt="AIT Campus"
-      />
-    </div>
-
+    
   </div>
 
 </section>

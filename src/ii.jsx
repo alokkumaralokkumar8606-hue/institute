@@ -432,7 +432,7 @@ export default function Ii({ openAdmin }) {
 
         <div className="section-heading">
           <div>
-            <h2>Life at AIT</h2>
+            <h2>GALLERY</h2>
             <p>Explore moments from our campus.</p>
           </div>
         </div>

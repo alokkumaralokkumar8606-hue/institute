@@ -149,56 +149,68 @@ export default function Ii({ openAdmin }) {
       </header>
 
       {/* HERO */}
-      <section id="home" className="hero">
+     <section id="home" className="hero">
 
-        <div className="hero-overlay"></div>
+  <div className="hero-overlay"></div>
 
-        <div className="hero-content">
+  <div className="hero-content">
 
-          <div className="hero-badge">
-            🎓 QUALITY EDUCATION • INNOVATION • SUCCESS
-          </div>
+    <div className="hero-left">
 
-          <h1>
-            Shape Your Future
-            <br />
-            <span>With AIT</span>
-          </h1>
+      <div className="hero-badge">
+        🎓 QUALITY EDUCATION • INNOVATION • SUCCESS
+      </div>
 
-          <p>
-            Build knowledge. Develop skills. Create your future.
-            Experience career-focused education with modern learning.
-          </p>
+      <h1>
+        Shape Your Future
+        <br />
+        <span>With AIT</span>
+      </h1>
 
-          <div className="hero-buttons">
-            <a href="#courses" className="btn-primary">
-              Explore Courses →
-            </a>
+      <p>
+        Build knowledge. Develop skills. Create your future.
+        Experience career-focused education with modern learning.
+      </p>
 
-            <a href="#admission" className="btn-outline">
-              Apply for Admission
-            </a>
-          </div>
+      <div className="hero-buttons">
+        <a href="#courses" className="btn-primary">
+          Explore Courses →
+        </a>
 
-          <div className="hero-trust">
-            <div>
-              <strong>2026</strong>
-              <span>Admissions Open</span>
-            </div>
+        <a href="#admission" className="btn-outline">
+          Apply for Admission
+        </a>
+      </div>
 
-            <div>
-              <strong>100%</strong>
-              <span>Career Focused</span>
-            </div>
-
-            <div>
-              <strong>24×7</strong>
-              <span>Student Support</span>
-            </div>
-          </div>
-
+      <div className="hero-trust">
+        <div>
+          <strong>2026</strong>
+          <span>Admissions Open</span>
         </div>
-      </section>
+
+        <div>
+          <strong>100%</strong>
+          <span>Career Focused</span>
+        </div>
+
+        <div>
+          <strong>24×7</strong>
+          <span>Student Support</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div className="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80"
+        alt="AIT Campus"
+      />
+    </div>
+
+  </div>
+
+</section>
 
       {/* STATS */}
       <section className="stats">
@@ -456,6 +468,65 @@ export default function Ii({ openAdmin }) {
 
         </div>
       </section>
+      <section className="section">
+  <div className="section-heading">
+    <h2>Life At AIT</h2>
+  </div>
+
+  <div className="life-grid">
+
+    <div className="life-card">
+      <img
+        src="https://images.unsplash.com/photo-1517649763962-0c623066013b"
+        alt="Sports"
+      />
+      <h3>🏆 Sports</h3>
+      <p>Annual sports meets and inter-college competitions.</p>
+    </div>
+
+    <div className="life-card">
+      <img
+        src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
+        alt="Technical Events"
+      />
+      <h3>💻 Technical Events</h3>
+      <p>Hackathons, coding contests and technical workshops.</p>
+    </div>
+
+    <div className="life-card">
+      <img
+        src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a"
+        alt="Cultural Fest"
+      />
+      <h3>🎭 Cultural Fest</h3>
+      <p>Music, dance and cultural celebrations throughout the year.</p>
+    </div>
+
+  </div>
+</section>
+<section className="placement">
+
+  <div className="stat-box">
+    <h2>500+</h2>
+    <p>Students</p>
+  </div>
+
+  <div className="stat-box">
+    <h2>25+</h2>
+    <p>Faculty</p>
+  </div>
+
+  <div className="stat-box">
+    <h2>15+</h2>
+    <p>Courses</p>
+  </div>
+
+  <div className="stat-box">
+    <h2>100%</h2>
+    <p>Placement Support</p>
+  </div>
+
+</section>
 
       {/* EVENTS */}
       <section id="events" className="section events-section">

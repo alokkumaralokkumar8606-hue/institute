@@ -20,7 +20,19 @@ const db = new (sqlite3.verbose().Database)('./database.db', (err) => {
   if (err) console.error('Database connection error:', err.message);
   else console.log('Connected to SQLite database successfully!');
 });
+db.run(`
+ALTER TABLE notices
+ADD COLUMN description TEXT
+`, (err) => {
+  if (err) console.log(err.message);
+});
 
+db.run(`
+ALTER TABLE notices
+ADD COLUMN active INTEGER DEFAULT 1
+`, (err) => {
+  if (err) console.log(err.message);
+});
 const sessions = new Map();
 
 function auth(req, res, next) {

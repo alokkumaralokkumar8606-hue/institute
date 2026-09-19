@@ -1471,3 +1471,26 @@ footer a {
 .event-card h3{
   color:#0b3b78;
 }
+.notice-card{
+  background:#fff;
+  border-radius:18px;
+  padding:25px;
+  margin-bottom:20px;
+  box-shadow:0 12px 30px rgba(0,0,0,.10);
+  border-top:5px solid #0b63ce;
+  transition:.3s;
+}
+
+.notice-card:hover{
+  transform:translateY(-5px);
+}
+
+.notice-date{
+  display:inline-block;
+  background:#eef5ff;
+  color:#0b63ce;
+  padding:8px 14px;
+  border-radius:8px;
+  font-weight:700;
+  margin-bottom:10px;
+}
